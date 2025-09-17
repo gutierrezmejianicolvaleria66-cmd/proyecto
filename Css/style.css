@@ -1,0 +1,258 @@
+.gradient-custom {
+    background-color: #242627;
+}
+
+section {
+    bottom: 60px;
+    background-color: #b8747d;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+header {
+    background: linear-gradient(135deg, #00416A, #0072B5);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* =========================
+   SECCIONES GENERALES
+========================= */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 12px 0;
+    font-size: 1.3rem;
+}
+
+.producto p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.producto button {
+    background: #0072B5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.producto button:hover {
+    background: #00416A;
+}
+
+/* =========================
+   OFERTAS
+========================= */
+#ofertas ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style: square;
+}
+
+#ofertas li {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* =========================
+   TABLA DE GUÍA
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #0072B5;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* =========================
+   FORMULARIO DE CONTACTO
+========================= */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 450px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="submit"] {
+    background: #00416A;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #0072B5;
+}
+
+/* =========================
+   MULTIMEDIA
+========================= */
+video, audio {
+    margin: 20px 0;
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+footer {
+    background: #00416A;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVIDAD
+========================= */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #productos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
